@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="vi" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Xác nhận đơn hàng</title>
+</head>
+<body>
+    <h1>Xác nhận đơn hàng</h1>
+    <p>Bạn đã đặt hàng thành công:</p>
+    <ul>
+        <li>**Tên sản phẩm:** <span th:text="${product.name}"></span></li>
+        <li>**Số lượng:** <span th:text="${quantity}"></span></li>
+        <li>**Tổng tiền:** <span th:text="${totalAmount}"></span></li>
+    </ul>
+    <a href="/products/list">Tiếp tục mua sắm</a>
+</body>
+</html>
